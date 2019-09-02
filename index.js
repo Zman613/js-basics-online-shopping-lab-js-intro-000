@@ -40,6 +40,11 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var x
+  for (var i = 0; i < cart.length; ++i){
+    x = x + cart[i].itemPrice
+  }
+  return x
 }
 
 function removeFromCart(item) {
