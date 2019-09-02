@@ -33,7 +33,7 @@ function viewCart() {
   } else {
     var x = tempCart.slice(-1)
     tempCart.pop()
-    tempCart.push(` and ${x}`)
+    tempCart.push(`and ${x}`)
     return (`In your cart, you have ${tempCart.join(', ')}.`)
   }
 }
