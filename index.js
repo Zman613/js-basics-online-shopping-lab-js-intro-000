@@ -29,7 +29,7 @@ function viewCart() {
   if (!cart.length){
     return ("Your shopping cart is empty.")
   } else {
-    return (`In your cart, you have ${tempcart.join(', and')}.`)
+    return (`In your cart, you have ${tempCart.join(', and')}.`)
   }
 }
 
