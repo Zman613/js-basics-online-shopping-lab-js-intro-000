@@ -28,8 +28,13 @@ function viewCart() {
   }
   if (!cart.length){
     return ("Your shopping cart is empty.")
-  } else {
+  } else if (cart.length < 3){
     return (`In your cart, you have ${tempCart.join(', and ')}.`)
+  } else {
+    var x = tempCart.slice(-1)
+    tempCart.pop()
+    tempCart.push(` and ${x}`)
+    return (`In you cart, you have ${tempCart.join().}`)
   }
 }
 
