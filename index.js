@@ -70,7 +70,7 @@ function placeOrder(cardNumber) {
     for (var i = 0; i < cart.length; ++i){
       x = x + cart[i].itemPrice
     }
-    cart.splice()
+    cart.splice(0)
     return (`Your total cost is $${x}, which will be charged to the card ${cardNumber}.`)
   }
 }
