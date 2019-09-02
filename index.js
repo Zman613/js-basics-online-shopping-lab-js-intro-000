@@ -30,6 +30,7 @@ function viewCart() {
     return ("Your shopping cart is empty.")
   } else {
     return (`In your cart, you have ${tempcart.join(', and')}.`)
+  }
 }
 
 function total() {
