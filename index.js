@@ -34,7 +34,7 @@ function viewCart() {
     var x = tempCart.slice(-1)
     tempCart.pop()
     tempCart.push(` and ${x}`)
-    return (`In you cart, you have ${tempCart.join()}.`)
+    return (`In you cart, you have ${tempCart.join(', ')}.`)
   }
 }
 
