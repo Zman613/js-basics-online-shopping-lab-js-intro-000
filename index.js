@@ -23,12 +23,19 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   var tempCart = []
+  for (var i = 0; i < cart.length; ++i){
+    tempCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+  }
   if (!cart.length){
     return ("Your shopping cart is empty.")
-  } else {
-    for (var i = 0; i < cart.length; ++i){
-      
-    }
+  } else if (cart.length === 1) {
+    return (`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`)
+  } else if (cart.length === 2) {
+
+  }
+
+  else {
+
   }
 }
 
